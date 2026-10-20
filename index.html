@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TroonistOS 1.5 Build — Ücretsiz Türk İşletim Sistemi</title>
+<meta name="description" content="TroonistOS, Ubuntu tabanlı ücretsiz ve Türkçe bir işletim sistemi. Akıllı tahta desteği, kendi kurulum ekranı, İş ve Okul otomasyonları. TroonistOS 1.5 Build'i indir.">
+<meta name="keywords" content="TroonistOS, Troonist OS, işletim sistemi, Türk işletim sistemi, Linux, Ubuntu, akıllı tahta, ücretsiz, indir">
+<meta name="author" content="Muhammed Emin (Frdji)">
+<meta property="og:title" content="TroonistOS 1.5 Build">
+<meta property="og:description" content="Teknolojinin Gücü! Ücretsiz, Türkçe, Ubuntu tabanlı işletim sistemi.">
+<meta property="og:image" content="resimler/paylas.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="resimler/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --mavi: #00a8e8; --koyu: #0a1a33; --koyu2: #10305a; --yazi: #e9f2ff; --soluk: #9fb6d6; --kart: rgba(255,255,255,0.06);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Poppins', sans-serif; background: var(--koyu); color: var(--yazi); line-height: 1.6; }
+  a { color: var(--mavi); }
+  header { position: sticky; top: 0; z-index: 9; display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 24px; background: rgba(10,26,51,0.85); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  header .marka { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: #fff; text-decoration: none; }
+  header img { width: 34px; height: 34px; }
+  nav a { color: var(--soluk); text-decoration: none; margin-left: 20px; font-size: 15px; }
+  nav a:hover { color: #fff; }
+  .giris { min-height: min(88vh, 760px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    padding: 60px 16px; background: url(resimler/arka.jpg) center/cover no-repeat; }
+  .giris h1 { font-size: clamp(42px, 8vw, 88px); font-weight: 800; color: #fff; line-height: 1.1; }
+  .giris .surum { font-size: clamp(22px, 3vw, 32px); color: #6cc8ff; font-weight: 600; }
+  .giris p { max-width: 620px; margin: 18px auto 30px; color: #d6e6ff; font-size: 18px; }
+  .dugme { display: inline-block; background: var(--mavi); color: #fff; font-weight: 600; font-size: 18px; padding: 14px 34px;
+    border-radius: 40px; text-decoration: none; box-shadow: 0 8px 30px rgba(0,168,232,0.35); transition: transform .15s; }
+  .dugme:hover { transform: translateY(-2px); }
+  .dugme.pasif { background: #3a4d6b; box-shadow: none; cursor: default; }
+  .not { font-size: 14px; color: var(--soluk); margin-top: 12px; }
+  section { max-width: 1050px; margin: 0 auto; padding: 70px 16px; }
+  h2 { font-size: 34px; text-align: center; margin-bottom: 36px; }
+  .izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+  .kart { background: var(--kart); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 24px; }
+  .kart .ikon { font-size: 34px; }
+  .kart h3 { font-size: 19px; margin: 8px 0 6px; }
+  .kart p { color: var(--soluk); font-size: 15px; }
+  .indir { background: linear-gradient(180deg, var(--koyu), var(--koyu2)); text-align: center; max-width: none; }
+  .indir .ic { max-width: 700px; margin: 0 auto; }
+  table { width: 100%; border-collapse: collapse; margin: 26px 0; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 15px; }
+  td:first-child { color: var(--soluk); width: 40%; }
+  ol { text-align: left; margin: 20px auto; max-width: 560px; padding-left: 22px; color: #d6e6ff; }
+  ol li { margin: 6px 0; }
+  footer { text-align: center; padding: 30px 16px; color: var(--soluk); font-size: 14px; border-top: 1px solid rgba(255,255,255,0.08); }
+  @media (max-width: 600px) { nav { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <a class="marka" href="#"><img src="resimler/logo.png" alt="TroonistOS logosu">TroonistOS</a>
+  <nav><a href="#ozellikler">Özellikler</a><a href="#indir">İndir</a><a href="#kurulum">Kurulum</a></nav>
+</header>
+
+<div class="giris">
+  <img src="resimler/logo.png" alt="TroonistOS logosu" style="width:min(220px,45vw);filter:drop-shadow(0 0 30px rgba(0,168,232,.45));margin-bottom:18px">
+  <h1>TroonistOS</h1>
+  <div class="surum">1.5 Build</div>
+  <p>Teknolojinin Gücü! Ücretsiz, tamamen Türkçe ve Ubuntu tabanlı bir işletim sistemi. Evde, okulda ve işte.</p>
+  <a class="dugme" id="indirDugme" href="#indir">TroonistOS'u İndir</a>
+</div>
+
+<section id="ozellikler">
+  <h2>Neler var?</h2>
+  <div class="izgara">
+    <div class="kart"><div class="ikon">🆓</div><h3>Tamamen ücretsiz</h3><p>Lisans yok, ücret yok. İndir, flaş belleğe yaz, kur.</p></div>
+    <div class="kart"><div class="ikon">🇹🇷</div><h3>Türkçe</h3><p>Kurulumdan masaüstüne kadar her şey Türkçe. Türkçe Q klavye hazır.</p></div>
+    <div class="kart"><div class="ikon">🧑‍🏫</div><h3>Akıllı tahta desteği</h3><p>Dokunmatik ekran varsa kendi ekran klavyesi otomatik açılır. Okul otomasyonu ile açılış animasyonu.</p></div>
+    <div class="kart"><div class="ikon">⚙️</div><h3>Kendi kurulum ekranı</h3><p>Özel yükleyici, açılış animasyonu ve "Kurulumunu Bitirin" ekranıyla hesabını kolayca oluştur.</p></div>
+    <div class="kart"><div class="ikon">💼</div><h3>İş otomasyonu</h3><p>Windows programlarını çalıştırmak için hazır Wine ayarları, MetaTrader 5 desteği.</p></div>
+    <div class="kart"><div class="ikon">🐧</div><h3>Ubuntu 26.04 tabanlı</h3><p>Sağlam Linux temeli, GNOME masaüstü ve binlerce uygulama.</p></div>
+  </div>
+</section>
+
+<section class="indir" id="indir">
+  <div class="ic">
+    <h2>İndir</h2>
+    <a class="dugme" id="isoDugme" href="#">Yakında</a>
+    <p class="not" id="isoNot">İndirme bağlantısı çok yakında burada olacak.</p>
+    <table>
+      <tr><td>Sürüm</td><td>TroonistOS 1.5 Build</td></tr>
+      <tr><td>Dosya</td><td>TroonistOS-1.5-Build.iso (6,3 GB)</td></tr>
+      <tr><td>Mimari</td><td>64 bit (x86_64), UEFI ve eski BIOS</td></tr>
+      <tr><td>En az</td><td>4 GB RAM, 30 GB disk, 8 GB flaş bellek</td></tr>
+      <tr><td>SHA-256</td><td style="word-break:break-all" id="sha">yakında</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="kurulum">
+  <h2>Nasıl kurulur?</h2>
+  <ol>
+    <li>ISO dosyasını indir.</li>
+    <li><a href="https://etcher.balena.io/">balenaEtcher</a> veya Rufus ile 8 GB'lık bir flaş belleğe yaz.</li>
+    <li>Bilgisayarı flaş bellekten başlat (açılışta F12 / F11 / ESC).</li>
+    <li>Menüden <b>"TroonistOS'u Kur"</b>u seç ve yükleyicideki adımları izle.</li>
+    <li>Yeniden başlayınca hesabını oluştur. Hazır!</li>
+  </ol>
+  <p class="not" style="text-align:center">Önce denemek istersen menüden "Dene"yi seç ya da VirtualBox / VMware gibi bir sanal makinede aç.</p>
+</section>
+
+<footer>
+  TroonistOS — Muhammed Emin tarafından yapıldı. &nbsp;•&nbsp; <a href="https://www.youtube.com/@Frdji">YouTube: @Frdji</a><br>
+  TroonistOS, Ubuntu® tabanlıdır; Canonical ile bağlantısı yoktur.
+</footer>
+
+<script>
+  // ISO hazır olunca sadece bu iki satırı doldur:
+  const ISO_LINK = "https://archive.org/download/TroonistOS-1.5-Build/TroonistOS-1.5-Build.iso";   // ör. https://sourceforge.net/projects/troonistos/files/latest/download
+  const ISO_SHA = "3bbb79bcde30e10a7eb45e1c27523b9254bdc2d5ab549ad0bc6e132992c445a8";
+  if (ISO_LINK) {
+    for (const id of ["isoDugme", "indirDugme"]) { const a = document.getElementById(id); a.href = ISO_LINK; }
+    document.getElementById("isoDugme").textContent = "ISO'yu İndir (6,3 GB)";
+    document.getElementById("isoNot").textContent = "Ücretsiz indirme.";
+  } else document.getElementById("isoDugme").classList.add("pasif");
+  if (ISO_SHA) document.getElementById("sha").textContent = ISO_SHA;
+</script>
+</body>
+</html>
